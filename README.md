@@ -36,9 +36,8 @@ python jogo_forca.py
 
 📂 Estrutura Esperada
 Organize os arquivos assim:
-jogo_forca.py
-historico_partidas.txt
-img/
+├──jogo_forca.py
+├──historico_partidas.txt
 ├── background.png
 ├── forca0.png
 ├── forca1.png

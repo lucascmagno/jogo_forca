@@ -11,7 +11,7 @@ palavras = [
 
 # Caminhos e variáveis
 HISTORICO_ARQUIVO = "historico_partidas.txt"
-BACKGROUND_IMG = "img/background.png"
+BACKGROUND_IMG = "background.png"
 nickname = ""
 
 # Carregar histórico salvo
@@ -126,7 +126,7 @@ while True:
         janela["palavra"].update(" ".join(palavra_display))
         janela["erradas"].update(", ".join(letras_erradas))
         janela["tentativas"].update(str(tentativas_restantes))
-        janela["forca_img"].update(filename=f"img/forca{6 - tentativas_restantes}.png")
+        janela["forca_img"].update(filename=f"forca{6 - tentativas_restantes}.png")
 
         if "_" not in palavra_display:
             resultado = f"{nickname} 🎉 Vitória! A palavra era '{palavra_secreta}'"
@@ -148,6 +148,6 @@ while True:
         janela["palavra"].update(" ".join(palavra_display))
         janela["erradas"].update("")
         janela["tentativas"].update(str(tentativas_restantes))
-        janela["forca_img"].update(filename="img/forca0.png")
+        janela["forca_img"].update(filename="forca0.png")
 
 janela.close()
