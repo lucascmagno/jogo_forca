@@ -34,18 +34,18 @@ pip install PySimpleGUI
 Execute o script no terminal:
 python jogo_forca.py
 
-📂 Estrutura Esperada
-Organize os arquivos assim:
-├──jogo_forca.py
-├──historico_partidas.txt
-├── background.png
-├── forca0.png
-├── forca1.png
-├── forca2.png
-├── forca3.png
-├── forca4.png
-├── forca5.png
-├── forca6.png
+📂 Estrutura Esperada </br>
+Organize os arquivos assim:</br>
+├──jogo_forca.py</br>
+├──historico_partidas.txt</br>
+├── background.png         </br>
+├── forca0.png </br>
+├── forca1.png </br>
+├── forca2.png </br>
+├── forca3.png </br>
+├── forca4.png </br>
+├── forca5.png </br>
+├── forca6.png </br>
 
 🎨 Personalização
 🎯 Palavras → Edite a lista palavras diretamente no código para adicionar ou remover termos.
@@ -74,6 +74,8 @@ Palavra secreta da rodada
 🔹 Tela de Fim de Jogo
 <img src="https://drive.google.com/file/d/1GgXwZROaXvx3JZmlZD-B9xXB2oAL729D/view?usp=drive_link" alt="Fim do Jogo">
 <img src="https://drive.google.com/file/d/1xiVpTi2dMtdHvCloTtf-Nw84tfu6GJ_m/view?usp=drive_link" alt="Fim do Jogo">
+
+---
 
 #### 🔧 Tecnologias Utilizadas
 🐍 Python
