@@ -62,13 +62,18 @@ Palavra secreta da rodada
 
 📸 Imagens do Jogo
 🔹 Tela Inicial
-<img src="https://via.placeholder.com/600x300?text=Tela+Inicial" alt="Tela Inicial">
+<img src="https://drive.google.com/file/d/1aPjwWBiClIVGvNc5c7RMcwR02MTaEzX9/view?usp=drive_link" alt="Tela Inicial">
 
 🔹 Durante o Jogo
-<img src="https://via.placeholder.com/600x300?text=Jogo+da+Forca" alt="Jogo da Forca">
+<img src="https://drive.google.com/file/d/1UzaKqyCk3GovSas6rDN-HJQfFwQwha1n/view?usp=drive_link" alt="Jogo da Forca">
+<img src="https://drive.google.com/file/d/16yKGTZyFygU_MAc8IBk3Ui0GcxVKdDX8/view?usp=drive_link" alt="Jogo da Forca">
+
+🔹 Histórico de Partidas
+<img src="https://drive.google.com/file/d/1XCLUDYJ2AiBaH6tgjs88NwD3v4rIfoz5/view?usp=drive_link" alt="Jogo da Forca">
 
 🔹 Tela de Fim de Jogo
-<img src="https://via.placeholder.com/600x300?text=Resultado+com+op%C3%A7%C3%B5es" alt="Fim do Jogo">
+<img src="https://drive.google.com/file/d/1GgXwZROaXvx3JZmlZD-B9xXB2oAL729D/view?usp=drive_link" alt="Fim do Jogo">
+<img src="https://drive.google.com/file/d/1xiVpTi2dMtdHvCloTtf-Nw84tfu6GJ_m/view?usp=drive_link" alt="Fim do Jogo">
 
 #### 🔧 Tecnologias Utilizadas
 🐍 Python
