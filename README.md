@@ -2,83 +2,83 @@
 
 ## 📌 Sobre o Projeto
 
-Este é um **Jogo da Forca** desenvolvido em **Python** utilizando a biblioteca **PySimpleGUI**. O objetivo do jogo é adivinhar a palavra secreta antes que todas as tentativas se esgotem. O design segue um **estilo futurista**, com uma interface azul neon e preto.
+Este é um **Jogo da Forca** desenvolvido em **Python** utilizando a biblioteca **PySimpleGUI**. O objetivo é adivinhar a palavra secreta antes que todas as tentativas se esgotem. O visual segue um estilo **futurista cyberpunk**, com elementos em azul neon sobre um fundo escuro, tornando a experiência imersiva e estilizada.
 
 ---
 
 ## 🎮 Funcionalidades
 
-✅ **Tela Inicial** → O jogo começa após clicar em "START" e inserir um **nickname**.  
-✅ **Imagem de fundo na tela inicial** para uma experiência mais imersiva.  
-✅ **Botão para ver o histórico de partidas** antes de iniciar o jogo.  
-✅ **Jogo da Forca** → Interface amigável para adivinhar palavras.  
-✅ **Histórico de Partidas** → Registra todas as vitórias e derrotas no arquivo `historico_partidas.txt`.  
-✅ **Tela de Resultados** → Exibe o histórico após cada jogo.  
-✅ **Design Futurista** → Azul neon e preto para uma experiência imersiva.  
-✅ **Opção de reiniciar o jogo** sem fechar a aplicação.  
-✅ **Diferentes palavras aleatórias** a cada nova partida.  
+✅ **Tela Inicial com imagem personalizada** e campo para inserir o nickname  
+✅ **Jogo da Forca visual**, com imagem dinâmica da forca conforme os erros  
+✅ **Histórico de partidas** salvo em `historico_partidas.txt`, com nickname, resultado e palavra  
+✅ **Botão para visualizar histórico** a qualquer momento  
+✅ **Palavras aleatórias a cada partida**  
+✅ **Tela final com três opções**:  
+ 🔁 Jogar novamente  
+ 🏠 Voltar para a tela inicial  
+ 📜 Ver histórico de partidas  
+✅ **Reinício rápido da partida** com o botão "Reiniciar" durante o jogo  
+✅ **Sistema de letras erradas e tentativas restantes visível**  
+✅ **Interface futurista** com design azul neon + preto
 
 ---
 
 ## 🛠️ Como Executar o Jogo
 
-### 📌 **1. Pré-requisitos**
-Antes de rodar o jogo, certifique-se de ter o **Python** instalado na sua máquina. Se ainda não tem o PySimpleGUI, instale com o seguinte comando:
+### 📌 1. Pré-requisitos
 
-```bash
+Antes de rodar o jogo, instale o Python e a biblioteca `PySimpleGUI`:
+
 pip install PySimpleGUI
-```
-
-### 📌 **2. Rodando o Jogo**
-Após instalar as dependências, execute o seguinte comando no terminal:
-
-```bash
+📌 2. Rodando o Jogo
+Execute o script no terminal:
 python jogo_forca.py
-```
 
----
+📂 Estrutura Esperada
+Organize os arquivos assim:
+jogo_forca.py
+historico_partidas.txt
+img/
+├── background.png
+├── forca0.png
+├── forca1.png
+├── forca2.png
+├── forca3.png
+├── forca4.png
+├── forca5.png
+├── forca6.png
 
-## 🎨 Personalização
+🎨 Personalização
+🎯 Palavras → Edite a lista palavras diretamente no código para adicionar ou remover termos.
+🖼️ Imagens → Substitua os arquivos da pasta img/ para alterar o visual da forca ou do fundo.
 
-Caso queira personalizar a lista de palavras, basta modificar a variável `palavras` no código-fonte.
+📜 Histórico de Partidas
+Todos os resultados são automaticamente registrados no arquivo historico_partidas.txt, com:
 
----
+Nickname do jogador
 
-## 📜 Histórico de Partidas
+Resultado (vitória ou derrota)
 
-Os resultados das partidas são salvos automaticamente no arquivo `historico_partidas.txt`, incluindo **nickname do jogador, vitória ou derrota e a palavra secreta**.
+Palavra secreta da rodada
 
----
-
-## 📸 Imagens do Jogo
-
-🔹 **Tela Inicial**  
+📸 Imagens do Jogo
+🔹 Tela Inicial
 <img src="https://via.placeholder.com/600x300?text=Tela+Inicial" alt="Tela Inicial">
 
-🔹 **Jogo em andamento**  
+🔹 Durante o Jogo
 <img src="https://via.placeholder.com/600x300?text=Jogo+da+Forca" alt="Jogo da Forca">
 
-🔹 **Tela de Resultados**  
-<img src="https://via.placeholder.com/600x300?text=Tela+de+Resultados" alt="Tela de Resultados">
+🔹 Tela de Fim de Jogo
+<img src="https://via.placeholder.com/600x300?text=Resultado+com+op%C3%A7%C3%B5es" alt="Fim do Jogo">
 
----
+#### 🔧 Tecnologias Utilizadas
+🐍 Python
+🖼️ PySimpleGUI
 
-## 🔧 Tecnologias Utilizadas
+🤝 Contribuição
+Achou um bug ou quer sugerir melhorias? Sinta-se à vontade para abrir uma issue ou fazer um pull request.
 
-🚀 **Python** → Linguagem principal  
-🎨 **PySimpleGUI** → Para a interface gráfica  
+📜 Licença
+Este projeto está sob a licença MIT.
 
----
-
-## 🤝 Contribuição
-
-Sinta-se à vontade para contribuir! Se encontrar bugs ou quiser sugerir melhorias, abra uma issue ou envie um pull request.
-
----
-
-## 📜 Licença
-
-Este projeto está sob a licença MIT. Você pode usá-lo e modificá-lo como desejar.
-
-🚀 **Divirta-se jogando!**
-
+🚀 Divirta-se jogando!

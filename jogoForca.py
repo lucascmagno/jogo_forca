@@ -9,10 +9,10 @@ palavras = [
     "hardware", "inteligencia", "artificial", "neural", "cibernetico"
 ]
 
-# Nome do arquivo de histórico
+# Caminhos e variáveis
 HISTORICO_ARQUIVO = "historico_partidas.txt"
+BACKGROUND_IMG = "img/background.png"
 nickname = ""
-BACKGROUND_IMG = "background.png"
 
 # Carregar histórico salvo
 def carregar_historico():
@@ -26,45 +26,38 @@ def salvar_historico(historico):
     with open(HISTORICO_ARQUIVO, "w", encoding="utf-8") as file:
         file.write("\n".join(historico))
 
-# Função para exibir o histórico de partidas
+# Exibir histórico
 def ver_historico():
     historico_partidas = carregar_historico()
-    
     layout_historico = [
         [sg.Text("📜 Histórico de Partidas 📜", font=("Courier New", 20, "bold"), justification="center")],
         [sg.Listbox(values=historico_partidas, size=(50, 10), key="historico", font=("Courier New", 14))],
         [sg.Button("Voltar", font=("Courier New", 14, "bold"))]
     ]
-
     janela_historico = sg.Window("Histórico de Partidas", layout_historico, element_justification="center", finalize=True)
-
     while True:
         evento, _ = janela_historico.read()
         if evento in (sg.WINDOW_CLOSED, "Voltar"):
             break
-
     janela_historico.close()
 
-# Função para iniciar ou reiniciar o jogo
+# Iniciar ou reiniciar o jogo
 def iniciar_jogo():
     palavra = random.choice(palavras).upper()
     return palavra, ["_"] * len(palavra), [], 6
 
-# Tela inicial com nickname e background
+# Tela inicial
 def tela_inicial():
     global nickname
-
     layout_inicial = [
-        [sg.Image(BACKGROUND_IMG, size=(600, 300))],  # Imagem de fundo
+        [sg.Image(BACKGROUND_IMG, size=(540, 500))],
         [sg.Text("Digite seu Nickname:", font=("Courier New", 16, "bold"), text_color="#00FFFF")],
         [sg.Input(key="nickname", size=(20, 1), font=("Courier New", 14))],
         [sg.Button("START", size=(10, 2), font=("Courier New", 16, "bold"), button_color=("#FFFFFF", "#005F8F"))],
         [sg.Button("Ver Histórico", size=(15, 1), font=("Courier New", 14, "bold"), button_color=("#FFFFFF", "#005F8F"))],
         [sg.Button("Sair", size=(10, 2), font=("Courier New", 16, "bold"), button_color=("#FFFFFF", "#8F0000"))]
     ]
-    
     janela_inicial = sg.Window("Tela Inicial - Jogo da Forca", layout_inicial, element_justification="center", finalize=True)
-    
     while True:
         evento, valores = janela_inicial.read()
         if evento in (sg.WINDOW_CLOSED, "Sair"):
@@ -87,10 +80,11 @@ if not tela_inicial():
 # Iniciar o jogo
 palavra_secreta, palavra_display, letras_erradas, tentativas_restantes = iniciar_jogo()
 
-# Layout do jogo
+# Layout com imagem do boneco
 layout = [
     [sg.Text(f"👤 Jogador: {nickname}", font=("Courier New", 14, "bold"), text_color="#00FFFF")],
     [sg.Text("💀 JOGO DA FORCA 💀", font=("Courier New", 20, "bold"), justification="center", expand_x=True)],
+    [sg.Image(filename=f"forca0.png", key="forca_img")],
     [sg.Text("Palavra: ", font=("Courier New", 14)), sg.Text(" ".join(palavra_display), key="palavra", font=("Courier New", 14, "bold"))],
     [sg.Text("Tentativas restantes: ", font=("Courier New", 12)), sg.Text(str(tentativas_restantes), key="tentativas", font=("Courier New", 12, "bold"))],
     [sg.Text("Letras erradas: ", font=("Courier New", 12)), sg.Text("", key="erradas", font=("Courier New", 12, "bold"))],
@@ -98,9 +92,10 @@ layout = [
     [sg.Button("Reiniciar", font=("Courier New", 12, "bold")), sg.Button("Sair", font=("Courier New", 12, "bold"))]
 ]
 
-# Criar a janela do jogo
+# Criar janela do jogo
 janela = sg.Window("Jogo da Forca - Cyber Edition", layout, element_justification="center", finalize=True)
 
+# Loop principal
 while True:
     evento, valores = janela.read()
 
@@ -131,6 +126,7 @@ while True:
         janela["palavra"].update(" ".join(palavra_display))
         janela["erradas"].update(", ".join(letras_erradas))
         janela["tentativas"].update(str(tentativas_restantes))
+        janela["forca_img"].update(filename=f"img/forca{6 - tentativas_restantes}.png")
 
         if "_" not in palavra_display:
             resultado = f"{nickname} 🎉 Vitória! A palavra era '{palavra_secreta}'"
@@ -152,5 +148,6 @@ while True:
         janela["palavra"].update(" ".join(palavra_display))
         janela["erradas"].update("")
         janela["tentativas"].update(str(tentativas_restantes))
+        janela["forca_img"].update(filename="img/forca0.png")
 
 janela.close()
