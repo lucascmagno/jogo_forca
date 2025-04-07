@@ -28,14 +28,18 @@ Este é um **Jogo da Forca** desenvolvido em **Python** utilizando a biblioteca 
 ### 📌 1. Pré-requisitos
 
 Antes de rodar o jogo, instale o Python e a biblioteca `PySimpleGUI`:
-</br>
-pip install PySimpleGUI</br>
-📌 2. Rodando o Jogo</br>
-Execute o script no terminal:</br>
-python jogo_forca.py </br>
 
-📂 Estrutura Esperada </br>
-Organize os arquivos assim:</br>
+pip install PySimpleGUI
+📌 2. Rodando o Jogo
+
+Execute o script no terminal:
+
+python jogo_forca.py
+
+📂 Estrutura Esperada
+
+Organize os arquivos assim:
+
 ├──jogo_forca.py</br>
 ├──historico_partidas.txt</br>
 ├── background.png         </br>
@@ -47,19 +51,22 @@ Organize os arquivos assim:</br>
 ├── forca5.png </br>
 ├── forca6.png </br>
 
-🎨 Personalização</br>
-🎯 Palavras → Edite a lista palavras diretamente no código para adicionar ou remover termos.</br>
-🖼️ Imagens → Substitua os arquivos da pasta img/ para alterar o visual da forca ou do fundo.</br>
+🎨 Personalização
 
-📜 Histórico de Partidas</br>
-Todos os resultados são automaticamente registrados no arquivo historico_partidas.txt, com:</br>
+🎯 Palavras → Edite a lista palavras diretamente no código para adicionar ou remover termos.
+
+🖼️ Imagens → Substitua os arquivos da pasta img/ para alterar o visual da forca ou do fundo.
+
+📜 Histórico de Partidas
+
+Todos os resultados são automaticamente registrados no arquivo historico_partidas.txt, com:
+
 Nickname do jogador
-</br>
+
 Resultado (vitória ou derrota)
-</br>
+
 Palavra secreta da rodada
-</br>
-</br>
+
 📸 Imagens do Jogo
 🔹 Tela Inicial
 <img src="https://drive.google.com/file/d/1aPjwWBiClIVGvNc5c7RMcwR02MTaEzX9/view?usp=drive_link" alt="Tela Inicial">
