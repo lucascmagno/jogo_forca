@@ -97,9 +97,11 @@ Palavra secreta da rodada
 🖼️ PySimpleGUI
 
 🤝 Contribuição
+
 Achou um bug ou quer sugerir melhorias? Sinta-se à vontade para abrir uma issue ou fazer um pull request.
 
 📜 Licença
+
 Este projeto está sob a licença MIT.
 
 🚀 Divirta-se jogando!
