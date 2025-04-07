@@ -53,12 +53,12 @@ Organize os arquivos assim:</br>
 
 📜 Histórico de Partidas</br>
 Todos os resultados são automaticamente registrados no arquivo historico_partidas.txt, com:</br>
-
 Nickname do jogador
 </br>
 Resultado (vitória ou derrota)
 </br>
 Palavra secreta da rodada
+</br>
 </br>
 📸 Imagens do Jogo
 🔹 Tela Inicial
@@ -79,6 +79,7 @@ Palavra secreta da rodada
 
 #### 🔧 Tecnologias Utilizadas
 🐍 Python
+
 🖼️ PySimpleGUI
 
 🤝 Contribuição
